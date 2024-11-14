@@ -6,13 +6,14 @@ export const globalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  body {
-    font-family: ${({ theme }) =>
-      theme.primaryTheme.fontFamilyClassName.poppins};
+  /* body {
+    font-family: ${({ theme }) => {
+      console.log(theme.primaryTheme.fontFamily.poppins);
+      return "";
+    }};
   }
   code {
-    font-family: ${({ theme }) =>
-      theme.primaryTheme.fontFamilyClassName.sourceCodePro};
+    font-family: ${({ theme }) => theme.primaryTheme.fontFamily.sourceCodePro};
   }
   h1 {
     font-size: ${({ theme }) => theme.primaryTheme.fonteSizes.headings.h1};
@@ -28,5 +29,5 @@ export const globalStyles = createGlobalStyle`
   }
   p {
     font-size: ${({ theme }) => theme.primaryTheme.fonteSizes.paragraphs.base};
-  }
+  } */
 `;

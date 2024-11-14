@@ -21,8 +21,7 @@ export const primaryThemeSchema = z.object({
       green: z.string(),
     }),
   }),
-  fonts: z.string(),
-  fontFamilyClassName: z.object({
+  fontFamily: z.object({
     poppins: z.string(),
     sourceCodePro: z.string(),
   }),

@@ -1,8 +1,9 @@
 import type { Preview } from "@storybook/react";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 
-import { PrimaryThemeProvider, primaryTheme } from "../src/themes/primary";
+import { primaryTheme } from "../src/themes/primary";
 import { globalStyles } from "../src/styles/globalStyles";
+import PrimaryThemeProvider from "../src/themes/primary/PrimaryThemeProvider";
 
 const preview: Preview = {
   parameters: {
@@ -22,7 +23,7 @@ export const decorators = [
     },
     defaultTheme: "primary",
     Provider: PrimaryThemeProvider,
-    GlobalStyles: globalStyles,
+    //GlobalStyles: globalStyles,
   }),
 ];
 

@@ -1,8 +1,4 @@
-import { Poppins, Source_Code_Pro } from "next/font/google";
 import { PrimaryThemeType } from "./types";
-
-const poppins = Poppins({ weight: ["600", "700"] });
-const sourceCodePro = Source_Code_Pro({ weight: ["600", "700"] });
 
 export const primaryTheme: PrimaryThemeType = {
   colors: {
@@ -25,10 +21,9 @@ export const primaryTheme: PrimaryThemeType = {
       green: "#22B02E",
     },
   },
-  fonts: poppins.style.fontFamily,
-  fontFamilyClassName: {
-    poppins: poppins.className,
-    sourceCodePro: sourceCodePro.className,
+  fontFamily: {
+    poppins: "'Poppins', sans-serif",
+    sourceCodePro: "'Source Code Pro', monospace",
   },
   fonteSizes: {
     headings: {

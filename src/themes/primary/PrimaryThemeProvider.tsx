@@ -1,10 +1,9 @@
 import { ThemeProvider } from "styled-components";
 import { primaryTheme } from "./theme";
+import React from "react";
 
-export function PrimaryThemeProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function PrimaryThemeProvider({ children }: { children: React.ReactNode }) {
   return <ThemeProvider theme={primaryTheme}>{children}</ThemeProvider>;
 }
+
+export default PrimaryThemeProvider;
