@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./button-base.styles";
-import { BaseButtonProps } from "./types";
+import { ButtonBaseProps } from "./types";
 
-export const ButtonBase: React.FC<BaseButtonProps> = ({children, disabled}) => {
-  return <Container disabled={disabled}>{children}</Container>;
+export function ButtonBase({ children, props }: ButtonBaseProps) {
+  return <Container {...props}>{children}</Container>;
 }

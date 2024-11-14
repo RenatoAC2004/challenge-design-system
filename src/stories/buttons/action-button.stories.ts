@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { ActionButton } from '@/components/Molecules/action-button';
+import type { Meta, StoryObj } from "@storybook/react";
+import { ActionButton } from "@/components/Molecules/action-button";
 
 const meta: Meta<typeof ActionButton> = {
-  component: ActionButton,
-  title: 'Buttons/ActionButton',
+  component: ActionButton.Root,
+  title: "Buttons/ActionButton",
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
 };
 
 export default meta;
@@ -21,7 +21,7 @@ export const Default: Story = {
 
 export const Loading: Story = {
   args: {
-    label: 'Saving',
+    label: "Saving",
     loading: true,
   },
 };

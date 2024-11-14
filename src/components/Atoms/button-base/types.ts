@@ -1,4 +1,4 @@
-export interface BaseButtonProps {
-  disabled: boolean;
+export interface ButtonBaseProps {
   children: React.ReactNode;
+  props: HTMLButtonElement;
 }

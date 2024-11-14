@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { ButtonBaseProps } from "./types";
 
-export const Container = styled.button<{ disabled?: boolean }>`
+export const Container = styled.button<ButtonBaseProps>`
   background-color: #443df6;
   height: 56px;
   width: 120px;
@@ -9,16 +10,20 @@ export const Container = styled.button<{ disabled?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'}; 
   color: white;
   font-size: 16px;
-  opacity: ${props => props.disabled ? 0.6 : 1};
 
   &:hover {
-    background-color: ${props => props.disabled ? '#443df6' : '#605af7'};
+    background-color: ${(props) => (props.disabled ? "#443df6" : "#605af7")};
   }
 
-  &:active {
-    background-color: ${props => props.disabled ? '#443df6' : '#3a34d1'};
+  &:active,
+  &:focus {
+    background-color: ${(props) => (props.disabled ? "#443df6" : "#3a34d1")};
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
   }
 `;
