@@ -12,6 +12,7 @@ export const Container = styled.button<ButtonBaseProps>`
   align-items: center;
   color: white;
   font-size: 16px;
+  cursor: pointer;
 
   &:hover {
     background-color: ${(props) => (props.disabled ? "#443df6" : "#605af7")};
