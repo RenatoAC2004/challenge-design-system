@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import { ButtonBase } from "@/components/Atoms/button-base";
 
 const spin = keyframes`
@@ -12,8 +12,16 @@ const spin = keyframes`
 
 export const Container = styled(ButtonBase)``;
 
-export const WrapperIcons = styled.div`
+export const WrapperIcons = styled.div<{ isloading?: boolean }>`
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+
   svg {
-    animation: ${spin} 1s linear infinite;
+    ${({ isloading }) =>
+      isloading &&
+      css`
+        animation: ${spin} 1s linear infinite;
+      `}
   }
 `;
