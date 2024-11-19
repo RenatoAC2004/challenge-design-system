@@ -25,6 +25,6 @@ export const Container = styled.button<ButtonBaseProps>`
 
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 `;
