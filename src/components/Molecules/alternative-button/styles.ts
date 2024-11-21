@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const Container = styled(ButtonBase)`
   background-color: rgba(68, 61, 246, 0.1);
-  font-weight: 600;
   color: #443df6;
   transition: all 300ms ease;
 
