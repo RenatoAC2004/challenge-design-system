@@ -39,3 +39,10 @@ export const Saved: Story = {
     saved: true,
   },
 };
+
+export const Small: Story = {
+  args: {
+    label: "Let's do it",
+    size: "small",
+  },
+};
