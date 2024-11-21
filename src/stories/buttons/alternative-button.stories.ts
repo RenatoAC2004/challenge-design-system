@@ -27,3 +27,10 @@ const meta: Meta<typeof AlternativeButton> = {
       disabled: true,
     },
   };
+
+  export const Small: Story = {
+    args: {
+      label: "Let's do it",
+      size: "small",
+    },
+  };
