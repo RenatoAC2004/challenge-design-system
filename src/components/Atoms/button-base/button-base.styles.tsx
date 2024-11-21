@@ -3,9 +3,11 @@ import { ButtonBaseProps } from "./types";
 
 export const Container = styled.button<ButtonBaseProps>`
   background-color: #443df6;
-  height: 56px;
-  width: 120px;
+  height: ${(props) => (props.size === 'small' ? '40px' : '56px')};
+  width: ${(props) => (props.size === 'small' ? '96px' : '120px')};
+  min-width: 80px;
   border: 0;
+  font-weight: 600;
   border-radius: 10px;
   display: flex;
   justify-content: center;
